@@ -52,11 +52,11 @@ let voidFunction = (): void => {
 
 voidFunction();
 
-let neverFunction = (): never => {
-    throw new Error("This function never returns.");
-}
+// let neverFunction = (): never => {
+//     throw new Error("This function never returns.");
+// }
 
-neverFunction();
+// neverFunction();
 
 enum Color {
     Red,
@@ -102,8 +102,8 @@ let asyncFunction = async (): Promise<string> => {
 asyncFunction().then(result => console.log(result));
 
 let generatorFunction = function* () {
-    yield 1;
-    yield 2;
+    yield 11;
+    yield 22;
     yield 3;
 }
 
