@@ -1,0 +1,26 @@
+const message: string = "Hello, TypeScript!";
+console.log(message);
+console.log(message.toUpperCase());
+console.log(message.toLocaleLowerCase());
+console.log(message.length);
+console.log(message.includes("TypeScript"));
+console.log(message.startsWith("Hello"));
+console.log(message.endsWith("!"));
+const greeting: string = `Greeting: ${message}`;
+console.log(greeting);
+const repeatedMessage: string = message.repeat(3);
+console.log(repeatedMessage);
+console.log(message.trim());
+console.log(message.split(" "));
+console.log(message.replace("TypeScript", "JavaScript"));
+console.log(message.charAt(0));
+console.log(message.charCodeAt(0));
+console.log(message.indexOf("TypeScript"));
+console.log(message.lastIndexOf("TypeScript"));
+console.log(message.slice(0, 5));
+console.log(message.substring(0, 5));
+console.log(message.concat(" How are you?"));
+console.log(message.padStart(20, "*"));
+console.log(message.padEnd(20, "*"));
+console.log(message.repeat(2).toUpperCase());
+console.log("file end")
