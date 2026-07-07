@@ -61,7 +61,7 @@ neverFunction();
 enum Color {
     Red,
     Green,
-    Blue
+    Blue = "blue"
 }
 
 console.log(Color.Red);
@@ -143,3 +143,20 @@ let typeAliasValue: { name: string; age: number } = { name: "Bob", age: 30 };
 console.log(typeAliasValue.name);
 console.log(typeAliasValue.age);
 
+type personType = {
+    name: string;
+    age: number;
+}
+
+let personInstance: personType = { name: "Charlie", age: 28 };
+console.log(personInstance.name);
+console.log(personInstance.age);
+
+interface personInterface {
+    name: string;
+    age: number;
+}
+
+let personObj: personInterface = { name: "David", age: 35 };
+console.log(personObj.name);
+console.log(personObj.age);
